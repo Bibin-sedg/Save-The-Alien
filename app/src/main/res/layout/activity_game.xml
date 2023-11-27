@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/witchgamebg"
+    tools:context=".GameActivity">
+
+
+
+    <ImageView
+        android:id="@+id/iVAlien"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ufo" />
+
+    <TextView
+        android:id="@+id/tVStartInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Tap To Start"
+        android:textAlignment="center"
+        android:textColor="#4BFF09"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWitch2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/witch2"
+        tools:layout_editor_absoluteX="820dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <ImageView
+        android:id="@+id/iVCoin1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/golden_"
+        tools:layout_editor_absoluteX="835dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/iVCoin2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/golden_"
+        tools:layout_editor_absoluteX="835dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <ImageView
+        android:id="@+id/ivWitch1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/witch"
+        tools:layout_editor_absoluteX="825dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <ImageView
+        android:id="@+id/ivWitch3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/witch3"
+        tools:layout_editor_absoluteX="825dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/golden_" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="#EAD413"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/right1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/right3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/right2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
